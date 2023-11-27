@@ -35,9 +35,26 @@ const floatingPointNumber = 10.123;
 console.log(typeof Infinity);
 
 // 5. 길이에 제약이 없는 정수(예: 암호 관련 작업에서 사용)
+
 // 6. 참(true, yes) 또는 거짓(false, no)
+
+const isActive = false;
+console.log(typeof isActive);
+
 // 7. 데이터 컬렉션(collection) 또는 복잡한 엔티티(entity)
+
+const object = new Object({ name: 'seoyun' }); // object constructor
+console.log(object);
+
+const obj = { name: 'tiger' }; // object literal
+console.log(typeof obj);
+
 // 8. 고유한 식별자(unique identifier)
+
+const unique = Symbol('uuid');
+const unique2 = Symbol('uuid');
+
+console.log(unique);
 
 /* typeof 연산자의 2가지 사용법 ---------------------------------------------- */
 
@@ -48,8 +65,49 @@ console.log(typeof Infinity);
 
 // Object
 
+const user = {
+  name: 'tiger',
+  age: 25,
+  sayHi: function () {
+    console.log('hello~');
+  },
+
+  alert1: function () {
+    // narmal function
+  },
+
+  alert2() {
+    // consise method
+  },
+
+  alert3: () => {
+    // arrow function
+  },
+};
+
+user.sayHi();
+
+console.log(user);
+
 // Array
 
+const newArray = new Array([1, 2, 3]);
+
+const arr = [10, 100, 1000, 1, 2, 3];
+console.log(arr[3]);
+
 // function
+
+// 함수 vs 클래스 = 붕어빵틀..?!
+
+function 붕어빵틀(재료) {
+  // parameter (인자, 매개변수)
+  console.log(`냠냠 ${재료} 붕어빵`);
+}
+
+붕어빵틀('팥'); // argument (인수)
+붕어빵틀('슈크림');
+붕어빵틀('와사비');
+붕어빵틀('피자');
 
 // this
