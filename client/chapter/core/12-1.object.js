@@ -87,11 +87,9 @@ for (let key in authUser) {
 
 // 객체의 key만을 모아놓은 배열
 let keyList = Object.keys(authUser);
-// console.log(keyList);
 
 // 객체의 value만을 모아놓은 배열
 let valueList = Object.values(authUser);
-// console.log(valueList);
 
 function getPropertiesList(object) {
   let result = [];
@@ -173,6 +171,7 @@ const arr = [10, 100, 1000, 10000];
 
 // const [a1, a2, a3, a4] = arr;
 const [a1, ...d] = arr;
+// const [a1, ...d] = [10, 100, 1000, 10000];
 
 console.log(d);
 
@@ -208,8 +207,8 @@ for (let [key, value] of Object.entries(salaries)) {
 console.log(total);
 */
 
-/* -------------------------------------------- */
-/* 객체 구조 분해 할당  destructuring assignments    */
+/* --------------------------------------------- */
+/* 객체 구조 분해 할당🌟destructuring assignments */
 /* --------------------------------------------- */
 
 // 순서가 정해지지 않음. 변수의 이름을 변경할 수 있다.
@@ -223,7 +222,7 @@ const salaries = {
 const { 김지수, 이정현, 박수양, 장효진 } = salaries;
 // const { 김지수:kim, 이정현:lee, 박수양:park, 장효진:jang } = salaries;
 // :을 사용하여 rename 할 수 있음 (이 경우 이전 이름으로는 불러올 수 없음)
-console.log(김지수); // 순서의 영향을 받지 않음
+console.log(김지수); // -> 순서의 영향을 받지 않음
 
 function createUserData(obj) {
   console.log(obj);
