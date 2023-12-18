@@ -11,3 +11,4 @@ export const isBinInt = (data) => typeOf(data) === 'bigint';
 export const isFunction = (data) => typeOf(data) === 'function';
 export const isSymbol = (data) => typeOf(data) === 'symbol';
 export const isNumber = (data) => typeOf(data) === 'number';
+export const isString = (data) => typeOf(data) === 'string';
